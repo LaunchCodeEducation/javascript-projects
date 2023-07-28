@@ -1,15 +1,15 @@
 // Initialize Variables below
 
-// add logic below to determine the amount of astronauts on the shuttle
+// add logic below to verify total number of astronauts for shuttle launch does not exceed 7
 
-// add logic below to check if astronauts are ready
+// add logic below to verify all astronauts are ready
 
-// add logic below to check if the total mass is less than the maximum limit
+// add logic below to verify the total mass does not exceed the maximum limit of 850000
 
-// add logic below to check if the fuel temp is no less than 200 OR no greater than 300
+// add logic below to verify the fuel temperature is within the appropriate range of -150 and -300
 
-// add logic below to determine if fuel level is appropriate
+// add logic below to verify the fuel level is at 100%
 
-// add logic below to check if weather conditions are appropriate
+// add logic below to verify the weather status is clear
 
-// Based on the above conditions, verify that the shuttle is ready for LiftOff
+// Verify shuttle launch can proceed based on above conditions
