@@ -2,13 +2,6 @@
  * @jest-environment node
  */
 
-const fs = require('fs');
-const path = require("path");
-const { JSDOM } = require("jsdom");
-const { window } = new JSDOM(fs.readFileSync(path.resolve(__dirname, "../index.js"), 'utf8'));
-const { document } = window;
-const { screen } = require('@testing-library/jest-dom');
-
 //NOTE: Do NOT modify any of the code below.
 
 //These are the tests.  To run them and check your own status, type "npm test" into the console.  Running tests is optional.
