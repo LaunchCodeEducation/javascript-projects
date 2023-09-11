@@ -4,3 +4,7 @@ console.log("What","do","commas","do?");
 console.log("Does", "adding",      "space", "matter?");
 console.log('Launch' + 'Code');
 console.log("LaunchCode was founded in", 2013);
+console.log("Hello, World!");
+let message = "Hello, World!";
+console.log(message);
+console.log('3');
