@@ -2,7 +2,7 @@
    "name": "unit-testing",
    "version": "1.0.0",
    "description": "",
-   "main": "reverse.js",
+   "main": "palindrome.js",
    "scripts": {
      "test": "jest"
    },
