@@ -32,3 +32,4 @@ if (crewStatus && computerStatus === 'green'){
 // } else {
 //    console.log('Launch scrubbed.');
 // }
+console.log(launchReady)

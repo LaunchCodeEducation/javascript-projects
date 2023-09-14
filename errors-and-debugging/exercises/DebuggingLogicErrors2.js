@@ -31,3 +31,4 @@ if (fuelLevel >= 20000) {
 // } else {
 //    console.log('Launch scrubbed.');
 // }
+console.log(launchReady)
