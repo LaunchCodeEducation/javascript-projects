@@ -23,3 +23,8 @@
    comments. */
 
    console.log("Comments make your code more readable by others.");
+   let billHasBeenPaid = false;
+
+   if (!billHasBeenPaid) {
+      console.log("Your bill is due soon!");
+   }
