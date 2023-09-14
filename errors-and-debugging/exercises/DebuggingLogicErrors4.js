@@ -13,7 +13,7 @@ if (fuelLevel >= 20000) {
    console.log('Fuel level cleared.');
    launchReady = true;
 } else {
-   console.log('WARNING: Insufficient fuel!');
+   console.log('WARNING: CREW SEE ME!');
    launchReady = false;
 }
 

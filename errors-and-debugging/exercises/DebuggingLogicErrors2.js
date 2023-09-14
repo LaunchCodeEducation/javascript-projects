@@ -4,7 +4,7 @@
 
 //Given the fuelLevel value, should launchReady be true or false after the check?  Is the program behaving as expected?
 
-let launchReady = false;
+let launchReady = true;
 let fuelLevel = 17000;
 // let crewStatus = true;
 // let computerStatus = 'green';
@@ -14,7 +14,7 @@ if (fuelLevel >= 20000) {
    launchReady = true;
 } else {
    console.log('WARNING: Insufficient fuel!');
-   launchReady = false;
+   launchReady = true;
 }
 
 // if (crewStatus && computerStatus === 'green'){
