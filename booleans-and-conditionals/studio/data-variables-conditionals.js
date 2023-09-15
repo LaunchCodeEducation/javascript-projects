@@ -37,21 +37,28 @@ if(totalMassKg < maximumMassLimit){
 // add logic below to verify the fuel temperature is within the appropriate range of -150 and -300
 let isFuelTemp=false
 if(fuelTempCelsius >= -300 && fuelTempCelsius <= -150){
+    isFuelTemp=true;
 }
 
 // add logic below to verify the fuel level is at 100%
 let isFuelLevel= false;
-if(fuelLevel==="100%"){
+if(fuelLevel===100){
     isFuelLevel=true;
 }
 
 // add logic below to verify the weather status is clear
 let isWeatherStatus=false;
 if(weatherStatus==="clear"){
-  isWeatherStatus
+  isWeatherStatus= true;
 }
+console.log(aCount);
+console.log(validStatus);
+console.log(isMassLimit);
+console.log(isFuelTemp);
+console.log(isFuelLevel);
+console.log(isWeatherStatus);
 // Verify shuttle launch can proceed based on above conditions
-if(aCount &&  validStatus && isMassLimit && isFuelLevel && isFuelTemp && isWeatherStatus) {
+if(aCount &&  validStatus && isMassLimit &&  isFuelTemp && isFuelLevel && isWeatherStatus) {
 console.log("\n");
 console.log("All the systems are a go! Initiating space shettle launch sequence.");
 let line ="---------------------------------------------------------------------";
