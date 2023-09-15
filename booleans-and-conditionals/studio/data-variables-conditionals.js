@@ -51,12 +51,7 @@ let isWeatherStatus=false;
 if(weatherStatus==="clear"){
   isWeatherStatus= true;
 }
-console.log(aCount);
-console.log(validStatus);
-console.log(isMassLimit);
-console.log(isFuelTemp);
-console.log(isFuelLevel);
-console.log(isWeatherStatus);
+
 // Verify shuttle launch can proceed based on above conditions
 if(aCount &&  validStatus && isMassLimit &&  isFuelTemp && isFuelLevel && isWeatherStatus) {
 console.log("\n");
