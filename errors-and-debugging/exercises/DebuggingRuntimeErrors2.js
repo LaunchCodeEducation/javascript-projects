@@ -7,7 +7,7 @@ let fuelLevel = 17000;
 if (fuelLevel >= 20000) {
    console.log('Fuel level cleared.');
    launchReady = true;
-} else {
+} else {    
    console.log('WARNING: Sufficient fuel!');
    launchReady = false;
 }
