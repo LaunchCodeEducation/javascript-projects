@@ -13,39 +13,45 @@ let maximumMassLimit = 850000;
 let fuelTempCelsius = -225;
 let minimumFuelTemp	= -300;
 let maximumFuelTemp	= -150;
-let fuelLevel = "100%";//1
+let fuelLevel = 100;
 let weatherStatus =	"clear";
 let preparedForLiftOff = true;
 
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
+let aCount=false;
 if(astronautCount >=7){
-   
+   aCount=true;
 }
 
 // add logic below to verify all astronauts are ready
+let validStatus = false;
 if(astronautStatus==="ready"){
- 
+ validStatus=true;
 }
 // add logic below to verify the total mass does not exceed the maximum limit of 850000
+let isMassLimit= false;
 if(totalMassKg < maximumMassLimit){
-    
+    isMassLimit= true;
 }
 
 // add logic below to verify the fuel temperature is within the appropriate range of -150 and -300
+let isFuelTemp=false
 if(fuelTempCelsius >= -300 && fuelTempCelsius <= -150){
 }
 
 // add logic below to verify the fuel level is at 100%
+let isFuelLevel= false;
 if(fuelLevel==="100%"){
+    isFuelLevel=true;
 }
 
 // add logic below to verify the weather status is clear
+let isWeatherStatus=false;
 if(weatherStatus==="clear"){
-  
+  isWeatherStatus
 }
 // Verify shuttle launch can proceed based on above conditions
-if(astronautCount <=7 && astronautStatus =="ready" && totalMassKg <maximumMassLimit && (fuelTempCelsius >= -300 && fuelTempCelsius >= -150) 
-&& fuelLevel=== "100%" && weatherStatus==="clear")
+if(aCount &&  validStatus && isMassLimit && isFuelLevel && isFuelTemp && isWeatherStatus) {
 console.log("\n");
 console.log("All the systems are a go! Initiating space shettle launch sequence.");
 let line ="---------------------------------------------------------------------";
@@ -62,5 +68,5 @@ console.log("weatherStatus: " +weatherStatus);
 console.log(line);
 console.log("Have a safe trip astronauts!")
 
-
+}
 

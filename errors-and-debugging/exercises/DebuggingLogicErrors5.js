@@ -27,7 +27,7 @@ if (crewStatus && computerStatus === 'green'){
    crewReady = false;
 }
 
-console.log("crewReady = ", crewReady);
+console.log("crewReady = ", crewReady);//true
 
 if(countDown){
    console.log("Liftoff!");
