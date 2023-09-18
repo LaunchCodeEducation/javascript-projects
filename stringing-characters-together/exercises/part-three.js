@@ -14,10 +14,10 @@ let outputStr = `"The abbreviation for 'JavaScript' is" '${firstInitial}${lastIn
 
 console.log(outputStr);
 //4. Just for fun, try chaining 3 or more methods together, and then print the result.
-
+console.log((((language.slice(0)).toUpperCase()).replace('J','Q')));
 //Part Three section Two
 
 //1. Use the string methods you know to print 'Title Case' from the string 'title case'.
 
 let notTitleCase = 'title case';
-console.log(notTitleCase.charAt(1).toUpperCase + notTitleCase.slice(2,5) + notTitleCase.charAt(7).toUpperCase + notTitleCase.slice(7,10) );
+console.log(notTitleCase.charAt(0).toUpperCase() + notTitleCase.slice(1,5) +" "+notTitleCase.charAt(6).toUpperCase() + notTitleCase.slice(7,10));
