@@ -5,50 +5,71 @@ let protoArray4 = "Comma-spaces, might, require, typing, caution";
 
 strings = [protoArray1, protoArray2, protoArray3, protoArray4];
 
-//2) 
+//2)
 function reverseCommas() {
-	//TODO: 1. create and instantiate your variables.
-	let check;
-	let output;
-	//TODO: 2. write the code required for this step
+  //TODO: 1. create and instantiate your variables.
 
-	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
-	return output;
+  let check = strings[0].includes(",");
+  let output;
+  if (check) {
+    output = strings[0].split(",");
+    output = output.reverse();
+    output = output.join(",");
+  }
+
+  //TODO: 2. write the code required for this step
+
+  //NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
+  return output;
 }
 
 //3)
-function semiDash() {
-	let check;
-	let output;
-//TODO: write the code required for this step
+function semiDash(test) {
+  let check = test.includes(";");
+  let output;
+  if (check) {
+    output = test.split(";");
+    output = output.sort();
+    output = output.join("-");
+  }
+  //TODO: write the code required for this step
 
-  
-	return output;
+  return output;
 }
 
 //4)
-function reverseSpaces() {
-	let check;
-	let output;
+function reverseSpaces(test) {
+  let check = test.includes(" ");
+  let output;
+  if (check) {
+    output = test.split(" ");
+    output = output.sort().reverse();
+    output = output.join(" ");
+  }
   //TODO: write the code required for this step
 
-	return output;
+  return output;
 }
 
 //5)
-function commaSpace() {
-	let check;
-	let output;
-	//TODO: write the code required for this step
-  
-	return output;
+function commaSpace(test) {
+  let check = test.includes(", ");
+  let output;
+  if (check) {
+    output = test.split(", ");
+    output = output.reverse();
+    output = output.join(",");
+  }
+  //TODO: write the code required for this step
+
+  return output;
 }
 
 // NOTE: Don't add or modify any code below this line or your program might not run as expected.
 module.exports = {
-	strings : strings, 
-	reverseCommas : reverseCommas,
-	semiDash: semiDash, 
-	reverseSpaces : reverseSpaces,
-	commaSpace : commaSpace
+  strings: strings,
+  reverseCommas: reverseCommas,
+  semiDash: semiDash,
+  reverseSpaces: reverseSpaces,
+  commaSpace: commaSpace,
 };
