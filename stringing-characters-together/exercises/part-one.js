@@ -12,7 +12,7 @@ console.log(num.toString().length);
 //console.log(num.toString().split());
 //let num1=123.45;
 if (Number.isInteger(num)) {
-    console.log("0");
+    console.log("number of digits in decimal value is:0");
  } else {
     console.log(num.toString().split('.')[1].length);
  }

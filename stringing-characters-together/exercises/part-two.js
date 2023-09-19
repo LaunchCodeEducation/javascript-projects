@@ -40,3 +40,9 @@ console.log(`"The DNA strand is ${Length} characters long."`);
 
 //5) Just for fun, apply methods to ``dna`` and use another template literal to print, 'taco cat'.
 console.log(`${dna.slice(4,7).toLowerCase()}o ${dna.slice(dna.indexOf('CAT'),dna.indexOf('CAT')+3).toLowerCase()}`);
+
+let protoArray1 = "3,6,9,12";
+if(protoArray1.includes(",")){
+   let pA1=protoArray1.split(",").reverse().join(",");
+    console.log(pA1);
+}
