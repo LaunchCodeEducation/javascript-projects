@@ -9,9 +9,11 @@ let eCabinet= equipment.split(",").sort();
 let pCabinet= pets.split(",").sort();
 let sCabinet= sleepAids.split(",").sort();
 console.log(`${fCabinet}\n${eCabinet}\n${pCabinet}\n${sCabinet}`);
+
 //2) Initialize a cargoHold array and add the cabinet arrays to it. Print cargoHold to verify its structure.
 let cargoHold = [fCabinet,eCabinet,pCabinet,sCabinet];
 console.log(cargoHold);
+
 //3) Query the user to select a cabinet (0 - 3) in the cargoHold.
 const input = require('readline-sync');
 let userInput = input.question("Which cabinet (0-3)would you like?");
@@ -23,6 +25,7 @@ console.log(userInput);
 //If the user entered an invalid number, print an error message.
 if(userInput < cargoHold.length){
     console.log(cargoHold[userInput]);
+    
 }else{
     console.log("ERROR!!!!!!!!");
 }
