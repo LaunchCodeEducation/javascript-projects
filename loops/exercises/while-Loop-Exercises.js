@@ -13,9 +13,10 @@ let altitude=0;
   }
  
 //b. Use a second loop to query the user for the number of astronauts (up to a maximum of 7). Validate the entry.
-while(numOfAstronauts>1 || numOfAstronauts<7)
+while( numOfAstronauts<7)
 {
  numOfAstronauts = input.question("Enter number of astronauts");
+ numOfAstronauts++;
 }   
   
   
