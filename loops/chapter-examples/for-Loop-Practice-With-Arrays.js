@@ -2,8 +2,12 @@
 let Name =["Appu","Mahi","Yuki","Nandy"]
 
 // write a for loop that prints each name on a different line
+for(i=0;i<Name.length; i++){
+    console.log(Name[i]);
+} 
 
 
+/*
 let classes = ["science, computer, art"];
 console.log(classes.length);
 
@@ -99,3 +103,4 @@ school[0].push("dance")
 console.log(school[0]);
 school[1].unshift("Holmes") 
 console.log(school[1]);
+*/

@@ -2,6 +2,7 @@
 let fuelLevel=0;
 let numOfAstronauts=0;
 let altitude=0;
+let loopcnt=0;
 
 
 /*Exercise #4: Construct while loops to do the following:
@@ -13,11 +14,21 @@ let altitude=0;
   }
  
 //b. Use a second loop to query the user for the number of astronauts (up to a maximum of 7). Validate the entry.
-while( numOfAstronauts<7)
+while( numOfAstronauts<1 ||numOfAstronauts>7)
 {
  numOfAstronauts = input.question("Enter number of astronauts");
  numOfAstronauts++;
-}   
+} 
+ /*
+ if(numOfAstronauts>7)
+  {loopcnt--;
+    console.log("Astronaut count should be less than 7")
+  }
+  else
+  {
+  loopcnt++;
+  }*/
+  
   
   
   
