@@ -57,11 +57,11 @@ let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
 let emptyArray = [""];
 
-function reverseArrayElements(arr) {
+function reverseArrayElements(arrayTest2) {
     let reversedArray = [];
 
-    for (let i = 0; i < arr.length; i++) {
-        let reversedElement = reverseCharacters(arr[i]);
+    for (let i = 0; i < arrayTest2.length; i++) {
+        let reversedElement = reverseCharacters(arrayTest2[i]);
         reversedArray.push(reversedElement);
     }
 
