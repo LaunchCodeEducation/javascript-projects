@@ -1,5 +1,19 @@
 //We want to COMPLETELY reverse an array by flipping the order of the entries AND flipping the order of characters in each element.
 
+let str1 = "aaple"
+let str2 = 'LC101'
+let str3 = 'Capitalized Letters'
+let str4 = 'I love the smell of code in the morning.'
+
+let num1 = 1234
+let num2  = 8675309                                                                                                                                                     
+
+
+
+let array1 = ['apple', 'potato', 'Capitalized Words'];
+let array2 = [123, 8897, 42, 1168, 8675309];
+let array3 = ['hello', 'world', 123, 'orange'];
+
 // Part One: Reverse Characters
 
 // 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse.
@@ -9,6 +23,20 @@
 // 5. Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
 // 6. Optional: Use method chaining to reduce the lines of code within the function.
 
+function reverseCharacters(element) {
+    
+    if(typeof element ==='number') {
+        return Number(String(element).split('').reverse().join(''));
+}    else {
+    return element.split('').reverse().join('');
+}
+}
+//console.log(reverseCharacters(str1));
+//console.log(reverseCharacters(str2));
+//console.log(reverseCharacters(str3));
+//console.log(reverseCharacters(str4));
+
+
 // Part Two: Reverse Digits
 
 // 1. Add an if statement to reverseCharacters to check the typeof the parameter.
@@ -17,7 +45,21 @@
 // 4. Return the reversed number.
 // 5. Be sure to print the result returned by the function to verify that your code works for both strings and numbers. Do this before moving on to the next exercise.
 
+console.log(reverseCharacters(num1));
+console.log(reverseCharacters(num2));
+
 // Part Three: Complete Reversal
+
+function reverseArray(arr) {
+    let newwArray = [];                                                                                                                                   
+    for(let i = 0; i < arr.length; i++) {
+        newwArray.push(reverseCharacters(arr[i]));
+    }
+        return newwArray.reverse();
+}
+console.log(reverseArray(array1));
+console.log(reverseArray(array2));
+console.log(reverseArray(array3));
 
 // 1. Define and initialize an empty array.
 // 2. Loop through the old array.
