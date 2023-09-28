@@ -1,4 +1,4 @@
-let cargoHold = ['oxygen tanks', 'space suits', 'parrot', 'instruction manual', 'meal packs', 'slinky', 'security blanket'];
+    let cargoHold = ['oxygen tanks', 'space suits', 'parrot', 'instruction manual', 'meal packs', 'slinky', 'security blanket'];
 
 //1) Use bracket notation to replace ‘slinky’ with ‘space tether’. Print the array to confirm the change.
 //cargoHold[5] = 'space tether';
