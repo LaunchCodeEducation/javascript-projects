@@ -44,7 +44,7 @@ let nonSuspiciousFunction = function(a) {
 let fuelLevel = 200000;
 let cargoHold = ['meal kits', 'gold',];
 let irs = function(levelOfFuel, itemsInCargo {
-  let arr = deckMops(itemsInCargo);
+  let arr = deckMops(itemsInCargo):
   return `Raided ${nonSuspiciousFunction(fuelLevel)} kg of fuel from the tanks, and stole ${arr[0]} and ${arr[1]} from the cargo hold.`
 }
 
