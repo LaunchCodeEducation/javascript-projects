@@ -1,0 +1,12 @@
+const input = require('readline-sync');
+
+//function functionName(input) {
+    //some input
+    //return;
+//}
+function greet(name) {
+    console.log('Good Morning, ${name}!');
+}
+let theName = input.question("Yo, what's your name?");
+
+greeting = greet("theName");

@@ -3,3 +3,10 @@ function reverse(str) {
    let reversedLettersArray = lettersArray.reverse();
    return reversedLettersArray.join('');
 }
+function reverse(str) {
+   return str.split('').reverse().join('');
+}
+
+function isPalindrome(str) {
+   return reverse(str) === str;
+}

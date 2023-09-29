@@ -8,3 +8,4 @@ printMessage();
 message = "Goodbye";
 printMessage();
 
+console.log(printMessage);

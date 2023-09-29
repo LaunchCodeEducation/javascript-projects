@@ -1,0 +1,11 @@
+const input = require('readline-sync');
+
+for(let i = 0; i < 51; i++) {
+    console.log(i);
+}
+
+let = forLoopedDrareg = [];
+
+for (let = 0; i < gerard.length; i++); {
+    console.log()
+}
