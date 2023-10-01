@@ -9,6 +9,18 @@
 // 5. Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
 // 6. Optional: Use method chaining to reduce the lines of code within the function.
 
+let _myParameter = "Capitalized Letters";
+
+function reverseCharacters(_myParameter) {
+    let _myArr = _myParameter.split("");
+    let _myArrReversed = _myArr.reverse();
+    let _resultString = _myArrReversed.join("");
+    return _resultString;
+}
+
+let result = reverseCharacters(_myParameter);
+console.log(result);
+
 // Part Two: Reverse Digits
 
 // 1. Add an if statement to reverseCharacters to check the typeof the parameter.
@@ -16,6 +28,20 @@
 // 3. If typeof is ’number’, convert the parameter to a string, reverse the characters, then convert it back into a number.
 // 4. Return the reversed number.
 // 5. Be sure to print the result returned by the function to verify that your code works for both strings and numbers. Do this before moving on to the next exercise.
+
+function reverseCharacters(_myParameter) {
+    if (typeof _myParameter === 'string') {
+        let _myArr = _myParameter.split("");
+        let _myArrReversed = _myArr.reverse();
+        let _resultString = _myArrReversed.join("");
+        return _resultString;
+    } else if (typeof _myParameter === 'number') {
+        return _myParameter.toString();
+    } else {
+        console.log("Not a string or number.");
+        return null; 
+    }
+}
 
 // Part Three: Complete Reversal
 
@@ -29,6 +55,27 @@
 let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
+let emptyArray = [""];
+
+function reverseArrayElements(arrayTest2) {
+    let reversedArray = [];
+
+    for (let i = 0; i < arrayTest2.length; i++) {
+        let reversedElement = reverseCharacters(arrayTest2[i]);
+        reversedArray.push(reversedElement);
+    }
+
+    return reversedArray;
+}
+
+let reversedArray1 = reverseArrayElements(arrayTest1);
+console.log(reversedArray1);
+
+let reversedArray2 = reverseArrayElements(arrayTest2);
+console.log(reversedArray2);
+
+let reversedArray3 = reverseArrayElements(arrayTest3);
+console.log(reversedArray3);
 
 // Bonus Missions
 
