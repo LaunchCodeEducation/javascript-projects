@@ -13,7 +13,7 @@ console.log(`Previously, the string was ${str}. Now it is ${newString}`);
 let userInput = input.question("How many letters will be rearrange?");
 
 //3) Add validation to your code to deal with user inputs that are longer than the word. In such cases, default to moving 3 characters. Also, the template literal should note the error.
-if ( userInput === "three" || 3) {
+if ( userInput == "three") {
     console.log("Correct!");
 } else {
     console.log("Your answer was longer than the correct response");
