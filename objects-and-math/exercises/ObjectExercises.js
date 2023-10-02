@@ -91,6 +91,7 @@ const fitnessResults = fitnessTest(crew);
 for (const result of fitnessResults) {
    console.log(result);
 }
+
 console.log(superChimpOne);
 console.log(superChimpTwo);
 console.log(salamander);
