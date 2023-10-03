@@ -1,8 +1,12 @@
 // Code your orbitCircumference function here:
+function orbitCircumference() {
+
+  return letC = 2πr
+}
 
 
 // Code your missionDuration function here:
-
+function 
 
 // Copy/paste your selectRandomEntry function here:
 

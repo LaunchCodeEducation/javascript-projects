@@ -1,0 +1,61 @@
+let whitney = ["Whitney", "Short", 37, true];
+
+function greetFunction(name) {
+    return `Hello, ${name}!`;
+};
+
+let whitneyObject = {
+    name: "Whitney",
+    height: "short",
+    age: 37,
+    isReallyShort: true,
+    greet: function(name = this.name) {
+        return `Hello ${name}`;
+    }
+    
+};
+for (let key in whitneyObject) {
+    console.log(`${key}: ${whitneyObject[key]}`)
+    //console.log(key);
+    //console.log(whitneyObject[key]);
+}
+
+//console.log(whitneyObject.greet("Ashley"));
+
+//console.log(whitney[0]);
+//console.log(whitneyObject.name);
+//console.log(whitneyObject.age);
+//console.log(whitneyObject["isReallyShort"]);
+
+//let output = [];
+
+//let students = {
+    //names: ["Whitney", "Ashley", "Crissy", "Tisha", "Trice"],
+    //scores: [100, 95, 74, 82, 91]
+//};
+
+//for (let i = 0; i < students["names"].length; i++) {
+    //let output = ""
+
+    //for (items in students) {
+        //output += `${students[items][i]}: `
+    //}
+
+    //console.log(output.slice(0, -2));
+//}
+
+//let iteration1 = "Whitney: 100";
+//let iteration2 = "Ashley: 95";
+
+//function roll1d420() {
+    //return Math.ceil(Math.random()*20);
+//}
+
+for(let i = 0; i < 10; i++) {
+    console.log(Math.round((Math.random()*1000))/10);
+}
+
+
+
+
+
