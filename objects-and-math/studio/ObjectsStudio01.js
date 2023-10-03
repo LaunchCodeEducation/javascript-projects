@@ -57,7 +57,6 @@ function selectRandomEntry(arr) {
   let index = Math.floor(Math.random() * arr.length);
   return arr[index];
 }
-
 let crewIds = [];
 
 while (crewIds.length < 3) {
@@ -66,7 +65,6 @@ while (crewIds.length < 3) {
     crewIds.push(randomId);
   }
 }
-
 console.log(crewIds);
 
 function buildCrewArray(candidates, selectedIds) {
