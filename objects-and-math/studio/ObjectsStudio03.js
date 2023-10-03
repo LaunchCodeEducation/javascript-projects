@@ -1,5 +1,6 @@
 // Code your crewMass function here:
 
+/*I PUT ALL THE CODE BELOW FOR SCOPE/DECLARATION REASONS I DID DO THE STUDIO :D*/
 
 // Code your fuelRequired function here:
 
@@ -52,3 +53,37 @@ let candidateA = {
  
  let crew = [candidateB,candidateD,candidateF];
  
+//Again, I will be putting all functions and code below here so they have full access to everything predeclared
+
+function crewMass(crew) {
+  const totalMass = crew.reduce((acc, member) => acc + member.mass, 0);
+  return parseFloat(totalMass.toFixed(1));
+}
+
+function fuelRequired(crew, uncrewedRocketMass = 75000) {
+  const crewMassTotal = crewMass(crew);
+  const initialFuel = crewMassTotal * 9.5;
+
+  let safetyMargin = 0;
+  for (const member of crew) {
+    if (member.species === 'dog' || member.species === 'cat') {
+      safetyMargin += 200;
+    } else {
+      safetyMargin += 100;
+    }
+  }
+
+  const totalFuelRequired = Math.ceil(initialFuel + safetyMargin);
+
+  return {
+    totalLaunchMass: crewMassTotal + uncrewedRocketMass,
+    totalFuelRequired,
+  };
+}
+
+// Example usage with the existing 'crew' array
+const selectedCrew = [candidateA, candidateC, candidateE]; 
+
+const launchInfo = fuelRequired(selectedCrew);
+
+console.log(`The mission has a launch mass of ${launchInfo.totalLaunchMass} kg and requires ${launchInfo.totalFuelRequired} kg of fuel.`);
