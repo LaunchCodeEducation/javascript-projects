@@ -1,16 +1,8 @@
-function isPalindrome(str){
-    return str === str.split('').reverse().join('');
+module.exports = {
+    areaOfCircle: areaOfCircle,
+    circumference: circumference,
+    findRadius: findRadius,
+    arcLength: arcLength
 }
 
-function evenOrOdd(num){
-    if (num%2===0){
-        return "Even";
-    } else {
-        return "Odd";
-    }
-}
-
-function randomArrayElement(arr){
-    let index = Math.floor(Math.random()*arr.length);
-    return arr[index];
-}
+const circleStuff = require('./circleStuff.js');
