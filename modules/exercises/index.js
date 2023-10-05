@@ -1,6 +1,6 @@
 //Import modules:
 const input = require('readline-sync');   //Import readline-sync.
-const averages = require('./package.json'); //Import functions from averages.js.
+const averages = require('./ScoreCalcs/averages.js'); //Import functions from averages.js.
 const printAll = require('./display.js'); //Import function from display.js.
 const randomSelect = require('./randomSelect.js');     //Import function from randomSelect.js.
 const { averageForTest } = require('./ScoreCalcs/averages.js');
@@ -19,7 +19,7 @@ for (let i = 0; i<prompts.length; i++){
   let response = input.question(`Would you like to ${prompts[i]}? Y/N: `);
   if (response.toLowerCase()==='y'){
     if (i===0){
-      printAll() = printAll(astronauts, testTitles, scores); //Call 'printAll' here and pass in all necessary arguments.
+      printAll(astronauts, testTitles, scores); //Call 'printAll' here and pass in all necessary arguments.
     } else if (i===1){
       for (let j = 0; j<testTitles.length; j++){
         let avg = averages.averageForTest(j, scores); //Call 'averageForTest' here. Pass in j and scores as arguments.
@@ -31,7 +31,7 @@ for (let i = 0; i<prompts.length; i++){
         console.log(`${astronauts[j]}'s test average = ${avg}%.`);
       }
     } else {
-      let walker = walker.randomSelect; //Call 'randomSelect' to pick a spacewalker from the astronauts array.
+      let walker = randomSelect(astronauts); //Call 'randomSelect' to pick a spacewalker from the astronauts array.
       console.log(`${walker} is the next spacewalker.`);
     }
   } else {
