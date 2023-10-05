@@ -1,16 +1,3 @@
-//Import modules:
-const input = //Import readline-sync.
-const averages = //Import functions from averages.js.
-const printAll = //Import function from display.js.
-const randomSelect = //Import function from randomSelect.js.
-
-//Candidate data:
-let astronauts = ['Fox','Turtle','Cat','Hippo','Dog'];
-
-const testTitles = ['Math','Fitness','Coding','Nav','Communication'];
-
-let scores = [[95, 86, 83, 81, 76],[79, 71, 79, 87, 72],[94, 87, 87, 83, 82],[99, 77, 91, 79, 80],[96, 95, 99, 82, 70]];
-
 //User interface:
 let prompts = ['display all scores', 'average the scores for each test', 'average the scores for each astronaut','select the next spacewalker'];
 
@@ -37,3 +24,7 @@ for (let i = 0; i<prompts.length; i++){
     console.log("Option skipped.");
   }
 }
+
+printAll(astronauts, testTitles, scores); 
+
+let avg = averages.averageForStudent(j, scores);
