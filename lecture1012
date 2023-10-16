@@ -1,0 +1,44 @@
+
+let friends = ["Whitney", "Ashley", "Tisha", "Crissy", "Trice"];
+    try {
+        console.log(friends[0].length);
+    }catch(e) {
+        console.log("She is not our friend");
+    }
+    console.log("No, seriously");
+
+
+
+function checkNum(num) {
+    if (isNaN(num)) {
+        throw Error ("Buddy that is not a number")
+    }
+    return "Yup, that's a number";
+}
+
+
+//console.log(checkNum("Whitney"));
+console.log(checkNum(100));
+
+//let whitneyForgetAboutMe;
+//types
+//let babyGiraffe = {
+    //species: "A giraffe, idk what else to tell you",
+   // name: "Whitney",
+   // age: "baby",
+   // diet: "a lot of leaves",
+   // height: "one gerard",
+   // weight: null
+//};
+
+//Scope
+
+//for( let i = 0; i <51; i++) {
+    //console.log(i);
+//}
+//var i = "no";
+
+//console.log(`The final value of i is: ${i}`);
+////unhoistedVariable = "Whitney"
+//console.log(unhoistedVariable);
+//var unhoistedVariable 

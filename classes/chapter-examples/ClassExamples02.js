@@ -11,7 +11,8 @@ class Astronaut {
 }
 
 let tortoise = new Astronaut('Speedy', 120);
-
+console.log(typeof tortoise);
 console.log(tortoise.name, tortoise.age, tortoise.mass);
 
 // What happens if we call Astronaut and pass in MORE than 3 arguments? TRY IT!
+console.log(Astronaut.color, Astronaut.havinfun, Astronaut.favoritecolor);

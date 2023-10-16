@@ -14,8 +14,8 @@ console.log(fox.age, fox.color);
 
 fox.age = 9;
 fox.color = 'red';
-
+fox.big = false
 console.log(fox);
-console.log(fox.age, fox.color);
+console.log(fox.age, fox.color, fox.big);
 
 //Try modifying or adding properties below.
