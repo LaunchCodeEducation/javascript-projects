@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Launch Status</title>
+    <script>
+      window.addEventListener("load", function() {
+          fetch("https://handlers.education.launchcode.org/static/weather.json").then( function(response) {
+              // Access the JSON in the response
+              response.json().then( function(json) {
+                const div = document.getElementById('weather-conditions');
+                div.innerHTML = `
+                  <ul>
+                    <li>Temp ${json.temp}</li>
+                    <li>Wind Speed ${json.windSpeed}</li>
+                    <li>Status ${json.status}</li>
+                    <li>Chance of Precip ${json.chanceOfPrecipitation}</li>
+                  </ul>
+                `;
+              });
+          });
+      });
+    </script>
+  </head>
+  <body>
+        <h1>Launch Status</h1>
+        Weather Conditions
+        <div id="weather-conditions">
+          <!-- TODO: dynamically add html about weather using data from API -->
+        </div>
+  </body>
+</html>
