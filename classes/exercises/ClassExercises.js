@@ -50,6 +50,6 @@ let makingTheShip = new Manual('Top Secret Shuttle Building Manual', 'Redacted',
 console.log(loveStory);
 console.log(makingTheShip);
 // Code exercises 4 & 5 here:
-loveStory.checkout(5);
+goodread.book.checkout(5);
 
-makingTheShip.dispose();
+makingTheShip.book.dispose();
