@@ -23,10 +23,13 @@ describe("Testing launchcode", function() {
   });
   describe("should have a method, launchOutput, which", function() {
     test("should return 'Launch!' for numbers evenly divisible by only 2", function(){
-      except(lauchcode.launchOutput(2)).
-    })
-  }
-
-  
-  )}
-
+      expect(launchcode.launchOutput(2)).toEqual("Launch!");
+    });
+    test("should return 'Code!' for numbers evenly divisible by only 3", function(){
+      expect(launchcode.launchOutput(3)).toEqual("Code!");
+  });
+  test("should return 'Rocks!' for numbers evenly divisible by only 5", function(){
+    expect(launchcode.launchOutput(5)).toEqual("Rocks!");
+  })
+})
+})
