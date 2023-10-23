@@ -1,0 +1,16 @@
+.avatar {
+    border-radius: 50%;
+    height: 100px;
+    float:right;
+}
+
+.astronaut {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}

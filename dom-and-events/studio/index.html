@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flight Simulator</title>
+        <link rel = "stylesheet" type = "text/css" href = "styles.css" />
+        <script src = "scripts.js"></script>
+    </head>
+    <body>
+        <div class="centered">
+            <h1>Flight Simulator</h1>
+            <h2>Current Flight Status</h2>
+            <p id = "flightStatus">Space shuttle ready for takeoff</p>
+            <h2>Shuttle Trajectory</h2>
+        </div>
+        <div id="flightDisplay">
+            <div class="center-block">
+                <h3>Fuel Levels</h3>
+                <p>Tank Full</p>
+                <h3>Astronaut Chat</h3>
+                <p>Houston, we are ready when you are!</p>
+            </div>
+            <div id = "shuttleBackground">
+                <img src = "LaunchCode_rocketline_white.png" height = "75" width = "75" id = "rocket"/>
+            </div>
+            <div class="center-block">
+                <button id="up">Up</button>
+                <button id="down">Down</button>
+                <button id="right">Right</button>
+                <button id="left">Left</button>
+                <h3>Space Shuttle Height</h3>
+                <p id="spaceShuttleHeight">0</p><span> miles</span>
+            </div>
+        </div>
+        <div class="centered">
+            <button id = "takeoff">Take off</button>
+            <button id = "landing">Land</button>
+            <button id = "missionAbort">Abort Mission</button>
+        </div>
+    </body>
+</html>
