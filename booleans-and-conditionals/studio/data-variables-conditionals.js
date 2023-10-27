@@ -12,7 +12,7 @@ let maximumMassLimit = 850000
 let fuelTempCelsius = -225
 let minimumFuelTemp = -300
 let maximumFuelTemp = -150
-let fuelLevel = "95%"
+let fuelLevel = "100%"
 let weatherStatus = "clear";
 let preparedForLiftOff = true;
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
@@ -54,6 +54,18 @@ if (weatherStatus != "clear") {
 }
 if (!preparedForLiftOff) {
     console.log("Not prepared for lift off");
-    }else{
-        console.log("Ready for Lift Off");
+} else {
+    console.log("All systems are a go, initiating launch sequence.");
+    console.log(divider);
+    console.log("Date: " + date);
+    console.log("Time: " + time);
+    console.log("Astronaut Count: " + astronautCount);
+    console.log("Crew Mass " + crewMassKg + "kg");
+    console.log("Fuel Mass " + fuelMassKg + "kg");
+    console.log("Shuttle Mass " + shuttleMassKg + "kg");
+    console.log("Total Mass " + totalMassKg + "kg");
+    console.log("Fuel Temperature " + fuelTempCelsius + "°");
+    console.log("Weather Status " + weatherStatus);
+    console.log(divider);
+    console.log("Have a safe trip astronauts!");
     }
