@@ -1,1 +1,18 @@
-/* Start adding your styling below! */ 
+/* Start adding your styling below! */
+body {
+    background-color: yellow;
+}
+p {
+    text-emphasis-color: green;
+}
+h1 {
+    font-size: 36px;
+}
+.center {
+    text-align: center;
+}
+h2 { color: blue;
+}
+#list-color {
+    color: blueviolet;
+ }
