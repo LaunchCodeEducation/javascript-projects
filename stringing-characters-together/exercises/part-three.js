@@ -3,7 +3,7 @@
 let language = 'JavaScript';
 
 //1. Use string concatenation and two slice() methods to print 'JS' from 'JavaScript'
-
+console.log(language.slice(0,1)+language.slice(4,5));
 //2. Without using slice(), use method chaining to accomplish the same thing.
 
 //3. Use bracket notation and a template literal to print, "The abbreviation for 'JavaScript' is 'JS'."
