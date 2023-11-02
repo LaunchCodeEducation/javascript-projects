@@ -1,6 +1,0 @@
-{
-  "main": "index.js",
-  "dependencies": {
-    "readline-sync": "1.4.9"
-  }
-}
