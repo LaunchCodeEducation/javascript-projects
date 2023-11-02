@@ -1,0 +1,19 @@
+{
+   "name": "Array and String Conversion",
+   "version": "1.0.0",
+   "description": "intro to prof web dev studio: Arrays Keep Things in Order",
+   "main": "grading.js",
+   "scripts": {
+      "test": "jest"
+   },
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "@testing-library/jest-dom": "^5.16.5",
+      "jest": "^29.6.1",
+      "jest-environment-jsdom": "^29.6.1"
+   },
+   "overrides": {
+      "semver": "~7.5.2"
+   }
+}
