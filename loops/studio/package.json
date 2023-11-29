@@ -12,6 +12,6 @@
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
-    "jest": "^29.6.1"
+    "jest": "^29.7.0"
   }
 }
