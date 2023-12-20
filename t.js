@@ -8,3 +8,7 @@ console.log(typeof(shuttleSpeed))
 console.log(typeof(marsDis))
 console.log(typeof(moonDis))
 console.log(typeof(mpkh))
+
+let mTM = marDis * mpkh; // Calculation for Miles to Mars mTM //
+let hTM = mTM / shuttleSpeed; // Calculation for Hours to Mars //
+let dTM = hTM / 24;

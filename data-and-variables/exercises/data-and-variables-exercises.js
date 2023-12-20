@@ -13,6 +13,9 @@ console.log(typeof(moonDis))  // Number //
 console.log(typeof(mpkh))  // Number //
 // Calculate a space mission below
 let mTM = marDis * mpkh; // Calculation for Miles to Mars mTM //
+let hTM = mTM / shuttleSpeed; // Calculation for Hours to Mars //
+let dTM = hTM / 24;
+
 
 
 // Print the results of the space mission calculations below
