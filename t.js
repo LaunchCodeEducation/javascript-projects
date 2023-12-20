@@ -18,3 +18,8 @@ console.log(hoursToMars);
 console.log(daysToMars);
 // Time to print the solution //
 console.log(nameOfShuttle,"will take",daysToMars,"to reach mars"); // Solution to exersize UwU //
+
+console.log(moonDis * mpkh);
+console.log(moonDis/shuttleSpeed);
+let hoursToMoon = moonDis/shuttleSpeed;
+let daysToMoon = hoursToMoon / 24;
