@@ -17,4 +17,4 @@ let daysToMars =  hoursToMars / 24; // Assignment of daysToMars after solution /
 console.log(hoursToMars);
 console.log(daysToMars);
 // Time to print the solution //
-console.log(nameOfShuttle,"will take",daysToMars,"to reach mars");
+console.log(nameOfShuttle,"will take",daysToMars,"to reach mars"); // Solution to exersize UwU //
