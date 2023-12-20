@@ -32,3 +32,4 @@ console.log(moonDis/shuttleSpeed);
 let hoursToMoon = moonDis/shuttleSpeed;
 let daysToMoon = hoursToMoon / 24;
 console.log(nameOfShuttle, "will take",daysToMoon, "to reach the Moon");
+// Link to orginal code orgin, file is in github as well. https://github.com/cain9209/javascript-projects/blob/main/t.js //
