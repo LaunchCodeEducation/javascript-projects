@@ -1,10 +1,10 @@
-// First we want to asign the variables their name // 
+// First we want to assign the variables their name // 
 let nameOfShuttle = "determination";
 let shuttleSpeed = 17500;
 let marsDis = 225000000;
 let moonDis = 38400;
 let mpkh = .621;
-// Seconde set of instructions we need to identify the data type of the variable we are re-asigning //
+// Seconde set of instructions we need to identify the data type of the variable we are re-assigning //
 console.log(typeof(nameOfShuttle)); // string //
 console.log(typeof(shuttleSpeed)); // number //
 console.log(typeof(marsDis)); // number //
@@ -23,6 +23,6 @@ console.log(nameOfShuttle,"will take",daysToMars,"to reach mars"); // Solution t
 // Equation challenge for Moon, Part 2 //
 console.log(moonDis * mpkh);// testing the variables on the console for correct result before final equation //
 console.log(moonDis/shuttleSpeed);
-let hoursToMoon = moonDis/shuttleSpeed; // asignment of variables for equation //
+let hoursToMoon = moonDis/shuttleSpeed; // assignment of variables for equation //
 let daysToMoon = hoursToMoon / 24;
-console.log(nameOfShuttle, "will take",daysToMoon, "to reach the Moon"); // final part of the equation printed on console //
+console.log(nameOfShuttle, "will take",daysToMoon, "to reach the Moon"); // final part of the equation printed to console //
