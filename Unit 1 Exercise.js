@@ -19,10 +19,10 @@ let daysToMars =  hoursToMars / 24; // Assignment of daysToMars after solution /
 console.log(hoursToMars); // Testing first set of variable instructions to solve for hoursToMars and daysToMars // 
 console.log(daysToMars);
 // Time to print the solution hooray!!!//
-console.log(nameOfShuttle,"will take",daysToMars,"days", "to reach Mars"); // Solution to exersize //
+console.log(nameOfShuttle,"will take",daysToMars,"days to reach Mars"); // Solution to exersize //
 // Equation challenge for Moon, Part 2 //
 console.log(moonDis * mpkh);// testing the variables on the console for correct result before final equation //
 console.log(moonDis/shuttleSpeed);
 let hoursToMoon = moonDis/shuttleSpeed; // assignment of variables for equation //
 let daysToMoon = hoursToMoon / 24;
-console.log(nameOfShuttle, "will take",daysToMoon, "days", "to reach the Moon"); // final part of the equation printed to console //
+console.log(nameOfShuttle, "will take",daysToMoon, "days to reach the Moon"); // final part of the equation printed to console //
