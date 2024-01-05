@@ -4,7 +4,7 @@ let shuttleSpeed = 17500;
 let marsDis = 225000000;
 let moonDis = 38400;
 let mpkh = .621;
-// Seconde set of instructions we need to identify the data type of the variable we are re-assigning //
+// Second set of instructions we need to identify the data type of the variable we are re-assigning //
 console.log(typeof(nameOfShuttle)); // string //
 console.log(typeof(shuttleSpeed)); // number //
 console.log(typeof(marsDis)); // number //
