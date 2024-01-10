@@ -49,3 +49,20 @@ if (!crewStatus || computerStatusCode !==200 || !spaceSuitsOn){
     console.log('"All Systems Go!!!"');
 }
 // As we can see they do produce the same result, while it seems that using the operators are more effecient // 
+// Now lets create a full status update for the crew when needed to monitor fule consumption. // 
+let fuelLevel = 21000;
+let engineTemperature = 1200;
+// enginIndicatorLight is already defined above//
+//a//
+if (fuelLevel > 20000 && engineTemperature <= 2500) {
+    console.log('"Full tank. Engines good."');
+}else if (fuelLevel > 10000 && engineTemperature <=2500) {
+    console.log('"Fuel level above 50 percent. Engines good."');
+}else if (fuelLevel > 5000 && engineTemperature <= 2500) {
+    console.log('"Check fuel level. Engines running hot!"');
+}else if (fuelLevel < 1000 || engineTemperature > 3500 || engineIndicatorLight === 'red blinking') {
+    console.log('"ENGINE FAILURE INMMINENT!"');
+}else {
+    console.log('"Fuel and engine status pending..."');
+}
+
