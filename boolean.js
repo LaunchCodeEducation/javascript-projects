@@ -1,5 +1,5 @@
 // Question 1 of Exercise //
-let engineIndicatorLight = redBlinking;
+let engineIndicatorLight = 'red blinking';
 let spaceSuitsOn = true;
 let shuttleCabinReady = true;
 let crewStatus = spaceSuitsOn && shuttleCabinReady;
@@ -8,7 +8,7 @@ let shuttleSpeed = 15000;
 // Question 2 of Exercise used the assignment opperators to define values // 
 if (engineIndicatorLight === 'green') {
     console.log("enginesHaveStarted");
-}else if (engineIndicatorLight === "green blinking") {
+}else if (engineIndicatorLight === 'green blinking') {
     console.log("eninge are preparing to start")
 }else {
     console.log('engines are off')
