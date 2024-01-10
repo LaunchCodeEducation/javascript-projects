@@ -30,3 +30,5 @@ if (launchReady) {
 } else {
    console.log('Launch scrubbed.');
 }
+/* Looking at the conditions that were given on certain variables, the result should have been 
+not to take off, will fix int he next erercise */
