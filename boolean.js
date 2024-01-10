@@ -65,4 +65,9 @@ if (fuelLevel > 20000 && engineTemperature <= 2500) {
 }else {
     console.log('"Fuel and engine status pending..."');
 }
-
+let commandOverride = true;
+if (commandOverride = false) {
+    console.log('"Delay Launch to confirm Safety protocal"');
+}else {
+    console.log('"Launch YOLO, things may not work but lets go!!!"');
+}
