@@ -35,4 +35,17 @@ if (shuttleSpeed > 17500) {
 } else {
     console.log('"Stable speed"');
 }
-
+// Question 4 Predictions of defined code //
+    // First one is compared to the second line of code written bellow //
+if (crewStatus && computerStatusCode === 200 && spaceSuitsOn){
+    console.log('"All Systems Go!!!"');
+}else {
+    console.log('"WARNING. Not ready"');
+}
+// Second version of code written with the comparison opperators //
+if (!crewStatus || computerStatusCode !==200 || !spaceSuitsOn){
+    console.log('"WARNING. Not ready"');
+}else {
+    console.log('"All Systems Go!!!"');
+}
+// As we can see they do produce the same result, while it seems that using the operators are more effecient // 
