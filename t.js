@@ -24,11 +24,3 @@ console.log(moonDis/shuttleSpeed);
 let hoursToMoon = moonDis/shuttleSpeed;
 let daysToMoon = hoursToMoon / 24;
 console.log(nameOfShuttle, "will take",daysToMoon, "to reach the Moon");
-console.log(2 ** 2 ** 3 * 3);
-let day = "Thursday";
- day = 32.5;
- day = 19;
- console.log(day);
- console.log(16-2*5/3+1);
- console.log(Coding Rocks)
- console.log(Coding Rocks);
