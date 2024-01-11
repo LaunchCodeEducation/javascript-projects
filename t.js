@@ -12,7 +12,7 @@ console.log(typeof(mpkh));
 // Third set of instructions //
 console.log(marsDis * mpkh); // How many Miles to Mars? //
 console.log(marsDis / shuttleSpeed); // Hours it will take to get to Mars in hours //
-let hoursToMars = marsDis / shuttleSpeed; // Assignment of the solution to define hoursToMars //
+let hoursToMars = marsDis / shuttleSpeed;// Assignment of the solution to define hoursToMars //
 let daysToMars =  hoursToMars / 24; // Assignment of daysToMars after solution //
 console.log(hoursToMars);
 console.log(daysToMars);
