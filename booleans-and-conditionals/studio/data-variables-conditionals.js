@@ -16,21 +16,22 @@ let fuelLevel = "100%";
 let weatherStatus = "clear";
 let preparedForLiftOff = true;
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
-if (astronautCount <= 7) {
+if (astronautCount <= 7);
 // add logic below to verify all astronauts are ready
- if (astronautStatus === "ready")
+ if (astronautStatus === "ready"); 
 // add logic below to verify the total mass does not exceed the maximum limit of 850000
-} if (totalMassKg <= maximumMassLimit) {
+if (totalMassKg <= maximumMassLimit); 
 // add logic below to verify the fuel temperature is within the appropriate range of -150 and -300
-} if (fuelTempCelsius <!  minimumFuelTemp && fuelTempCelsius >! maximumFuelTemp) {
+ if (fuelTempCelsius <!  minimumFuelTemp && fuelTempCelsius >! maximumFuelTemp); 
 // add logic below to verify the fuel level is at 100%
-} if (fuelLevel === "100%") {
+if (fuelLevel === "100%");
 // add logic below to verify the weather status is clear
-} if (weatherStatus === "clear") {
+ if (weatherStatus === "clear"); 
 // Verify shuttle launch can proceed based on above conditions
-} if (astronautCount && astronautStatus && totalMassKg && fuelLevel && weatherStatus === true) {
-console.log(preparedForLiftOff);
+if ((astronautCount >! 7) && (astronautStatus = "ready") && (totalMassKg <= maximumMassLimit) && (fuelTempCelsius <! minimumFuelTemp && fuelTempCelsius >! maximumFuelTemp) && (fuelLevel = "100%") && (weatherStatus = "clear")) {
+    preparedForLiftOff = true
+    console.log("Ready for liftoff")
+} else {
+    preparedForLiftOff = false
+    console.log("harry we have a houdini")
 }
-    
-
-
