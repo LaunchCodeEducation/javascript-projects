@@ -23,4 +23,3 @@ if (launchReady) {
    console.log("Liftoff!");
 } else {
    console.log("Launch scrubbed.");
-}
