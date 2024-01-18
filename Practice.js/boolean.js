@@ -15,7 +15,14 @@ console.log(dna);
 if (dna.indexOf('CAT') === -1) {
     console.log('CAT found');
 }else {
-    console.log('CAT NOT found')
+    console.log('CAT NOT found');
 }
-console.log(dna.slice(16,19))
-console.log (`The DNA strand is, ${dna.length} characters long.`)
+console.log(dna.slice(16,19));
+console.log (`The DNA strand is, ${dna.length} characters long.`);
+
+// Part 3 ?? //
+let code = 'Javascript'
+
+console.log(code.slice(0,1) + code.slice(4,5));
+console.log(code.slice(0,1).slice(4,5));
+console.log(`${code.slice(0,1).slice(4,5)}`);
