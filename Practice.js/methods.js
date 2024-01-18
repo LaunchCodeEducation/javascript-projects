@@ -1,10 +1,10 @@
 // Exercise 1 for "Advanced Strings" //
-/* let num = 123.45;
-if (String(num).includes('.')){
-    console.log(string(num).length - 1);
+let num = 123.45;
+if (String(num).includes('.')) {
+    console.log(string(num).length-1);
 } else {
     console.log(string(num).length);
-} */
+}
 
 // Exercise 2 for  "Advanced strings //
 dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT "
@@ -26,3 +26,5 @@ let code = 'Javascript'
 console.log(code.slice(0,1) + code.slice(4,5));
 console.log(code.slice(0,1).slice(4,5));
 console.log(`${code.slice(0,1).slice(4,5)}`);
+
+
