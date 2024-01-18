@@ -17,3 +17,5 @@ if (dna.indexOf('CAT') === -1) {
 }else {
     console.log('CAT NOT found')
 }
+console.log(dna.slice(16,19))
+console.log (`The DNA strand is, ${dna.length} characters long.`)
