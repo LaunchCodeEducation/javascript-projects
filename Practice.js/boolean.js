@@ -7,16 +7,13 @@ if (String(num).includes('.')){
 } */
 
 // Exercise 2 for  "Advanced strings //
-
-let dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT    "; 
-
-dna = dna.trim().toUpperCase().replace('GCT','AGG');
+dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT "
+dna = dna.trim().toUpperCase();
 console.log(dna);
-
-
-
-
-
-
-
-
+dna = dna.replace('GCT','AGG');
+console.log(dna);
+if (dna.indexOf('CAT') === -1) {
+    console.log('CAT found');
+}else {
+    console.log('CAT NOT found')
+}
