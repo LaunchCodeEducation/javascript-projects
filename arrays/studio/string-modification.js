@@ -8,11 +8,11 @@ console.log(str2);
 //Use a template literal to print the original and modified string in a descriptive phrase.
 
 //2) Modify your code to accept user input. Query the user to enter the number of letters that will be relocated.
-let answer = ' '; 
-let question = 'Enter the number of letters that will be relocated.'
-function askQuestion() {
-answer = input.question(question);
-} 
+let strLetters = '';
+strLetters =  Number(input.question('Enter the number of letters that will be relocated'));
+let newStr = str.slice(strLetters);
+let newStr2 = str.slice(0,3);
+
 //3) Add validation to your code to deal with user inputs that are longer than the word. In such cases, default to moving 3 characters. Also, the template literal should note the error.
 {
     let strInput = '';
