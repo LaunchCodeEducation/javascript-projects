@@ -1,3 +1,7 @@
+let str = 
+
+
+
 function reverse(str) {
    let lettersArray = str.split('');
    let reversedLettersArray = lettersArray.reverse();
