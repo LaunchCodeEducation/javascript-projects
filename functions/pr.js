@@ -1,18 +1,8 @@
-const questions = ['What is your Name?','How old are you next year','What is your favorite color?'];
-
-let question = [''];
-
-
-
-
-
-function askQuestion(){
-for(i = 0; i < questions.length; i++)
-console.log(questions[i]);
+function makeLine(size) {
+    let line = '';
+    for(i = 0; i < size; i++){
+    line += '#';
 }
-
-askQuestion()
-
-function calc(a,b) {
-    return(2*(a+b));
+return line;
 }
+console.log(makeLine(5));
