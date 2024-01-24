@@ -1,11 +1,10 @@
-let breadType = 'White';
-let fillingType = 'Ham'
-let  condimentsArr = ['mustard','mayon','ketch'];
-let compSand = [];
-function makeSandwich(breadType,fillingType,condimentsArr) {
-   for(let i = 0; i < condimentsArr.length; i++){
-  compSand.push(condimentsArr[i]+ ' ' + breadType+ ' ' + fillingType);
- }
- return compSand;
+function makeLineSize(numOfHashes){
+  let lineOfDiamond = '';
+for(let i = 0;i < numOfHashes; i++){
+   numOfHashes += '#';
+   }
+   return lineOfDiamond;
 }
-console.log(makeSandwich(breadType,fillingType,condimentsArr));
+function makeSquareSize(){
+   
+}
