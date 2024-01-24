@@ -6,7 +6,9 @@ let cargoHold = [1138, 'space suits', 'parrot', 'instruction manual', 'meal pack
 cargoHold.splice(3,0,'keys');
 console.log(cargoHold);
 //2) Remove ‘instruction manual’ from the array. (Hint: indexOf is helpful to avoid manually counting an index).
-let index = cargoHold.splice(3,1,'keys')
+let index = cargoHold.indexOf('keys');
+console.log(index); // 3//
+let newCargoHold = cargoHold.splice(3,1);
 //3) Replace the elements at indexes 2 - 4 with the items ‘cat’, ‘fob’, and ‘string cheese’.
-cargoHold.splice(2,2,'cat','fob','string cheese');
-console.log(cargoHold);
+let newCarHold2 = cargoHold.splice(2,3,).concat('string cheese','cat','fob');
+console.log(newCarHold2);
