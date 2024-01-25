@@ -1,16 +1,22 @@
 //We want to COMPLETELY reverse an array by flipping the order of the entries AND flipping the order of characters in each element.
 
 // Part One: Reverse Characters
-
-// 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse.
+// 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse
 function reverseCharacters(stringToReverse){
-// 2. Within the function, split the string into an array, then reverse the array.
-    reverseArr = str.split()
-// 3. Use join to create the reversed string and return that string from the function.
-// 4. Below the function, define and initialize a variable to hold a string.
-// 5. Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
-// 6. Optional: Use method chaining to reduce the lines of code within the function.
+let stringArrRe = [stringToReverse.split('').reverse()]
+return stringArrRe
 }
+let stringArr = ['apple','LC101','Capitalized Letters','I love the smell of code in the morning.']
+// 2. Within the function, split the string into an array, then reverse the array.
+// 3. Use join to create the reversed string and return that string from the function.
+
+let reversedStringArr = stringArrRe(stringArr);
+// 4. Below the function, define and initialize a variable to hold a string.
+console.log(reversedStringArr);
+// 5. Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
+
+// 6. Optional: Use method chaining to reduce the lines of code within the function.
+
 // Part Two: Reverse Digits
 
 // 1. Add an if statement to reverseCharacters to check the typeof the parameter.
@@ -27,10 +33,10 @@ function reverseCharacters(stringToReverse){
 // 4. Add the reversed string (or number) to the array defined in part ‘a’.
 // 5. Return the final, reversed array.
 // 6. Be sure to print the results from each test case in order to verify your code.
-
+/*
 let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
-let arrayTest3 = ['hello', 'world', 123, 'orange'];
+let arrayTest3 = ['hello', 'world', 123, 'orange'];*/
 
 // Bonus Missions
 
