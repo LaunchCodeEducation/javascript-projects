@@ -2,17 +2,32 @@
 
 // Part One: Reverse Characters
 // 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse
-function reverseCharacters(stringToReverse){
-let stringArrRe = [stringToReverse.split('').reverse()]
-return stringArrRe
-}
 let stringArr = ['apple','LC101','Capitalized Letters','I love the smell of code in the morning.']
+
+function reverseCharacters(stringToReverse){
+    let reversedArr = [];
+    for(i = 0; i < stringToReverse.length;i++){
+        reversedArr.push(stringToReverse[i].split('').reverse().join(''))
+    }
+    return reversedArr;
+}
+let reversedArr = reverseCharacters(stringArr)
+console.log(reversedArr);
+
+
+
+
+
+
+
+
+
 // 2. Within the function, split the string into an array, then reverse the array.
 // 3. Use join to create the reversed string and return that string from the function.
 
-let reversedStringArr = stringArrRe(stringArr);
+
 // 4. Below the function, define and initialize a variable to hold a string.
-console.log(reversedStringArr);
+
 // 5. Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
 
 // 6. Optional: Use method chaining to reduce the lines of code within the function.
