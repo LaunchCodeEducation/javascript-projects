@@ -14,27 +14,15 @@ function reverseCharacters(stringToReverse){
 let reversedArr = reverseCharacters(stringArr)
 console.log(reversedArr);
 
-
-
-
-
-
-
-
-
-// 2. Within the function, split the string into an array, then reverse the array.
-// 3. Use join to create the reversed string and return that string from the function.
-
-
-// 4. Below the function, define and initialize a variable to hold a string.
-
-// 5. Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
-
-// 6. Optional: Use method chaining to reduce the lines of code within the function.
-
 // Part Two: Reverse Digits
-
-// 1. Add an if statement to reverseCharacters to check the typeof the parameter.
+let practiceArr = [1234,'LC101',8675309,'radar'];
+function reverseCharacters(stringToReverse){
+    let reversedArr = [];
+for(let i = 0; i < stringToReverse.length;i++){
+reversedArr = stringToReverse[i].split('').reverse().join('')
+}
+}
+   
 // 2. If typeof is ‘string’, return the reversed string as before.
 // 3. If typeof is ’number’, convert the parameter to a string, reverse the characters, then convert it back into a number.
 // 4. Return the reversed number.
