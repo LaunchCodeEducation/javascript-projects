@@ -17,12 +17,17 @@ console.log(reversedArr);
 // Part Two: Reverse Digits
 let practiceArr = [1234,'LC101',8675309,'radar'];
 function reverseCharacters(stringToReverse){
-    let reversedArr = [];
-for(let i = 0; i < stringToReverse.length;i++){
-reversedArr = stringToReverse[i].split('').reverse().join('')
+ if(typeof stringToReverse === String){
+ return stringToReverse.split('').reverse().join(''); 
+ } else if (typeof stringToReverse !== Number) {
+let reversedNumber = Number(stringToReverse.toString().split('').reverse().join(''));
+return reversedNumber;
+} else {
+    return 'Unsuported type';
 }
 }
-   
+let stringToReverse = practiceArr;
+console.log('hello');
 // 2. If typeof is ‘string’, return the reversed string as before.
 // 3. If typeof is ’number’, convert the parameter to a string, reverse the characters, then convert it back into a number.
 // 4. Return the reversed number.

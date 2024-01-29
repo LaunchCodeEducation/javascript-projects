@@ -1,10 +1,9 @@
-function makeLineSize(numOfHashes){
-  let lineOfDiamond = '';
-for(let i = 0;i < numOfHashes; i++){
-   numOfHashes += '#';
+function makeLine(size) {
+   let line = '';
+   for (let i = 0; i < size; i++) {
+     line += '#';
    }
-   return lineOfDiamond;
-}
-function makeSquareSize(){
-   
-}
+   return line;
+ }
+ 
+ 

@@ -17,9 +17,10 @@ let lcArr = [1, 5, 'LC101', 'blue', 42];
 console.log(lcArr[i]);
 }
 let course = "LaunchCode";
+
 let reversedCourse = [];
 for(i = course.length - 1; i < course.length;i++){
    
- reversedCourse +=  reversedCourse + course[i];
+ reversedCourse =  reversedCourse + course[i];
 }
-console.log(reversedCourse);
+console.log(`${reversedCourse[i]}`);
