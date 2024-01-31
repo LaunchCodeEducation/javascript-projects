@@ -9,3 +9,4 @@ console.log(holdCabinet1.concat(holdCabinet2));
 console.log(holdCabinet1.slice(0,1),holdCabinet2.slice(0,2));
 //3) reverse the first array, and sort the second. What is the difference between these two methods? Do the methods alter the original arrays?
 console.log(`${holdCabinet1.reverse()},${holdCabinet2.sort()}`);
+

@@ -7,3 +7,20 @@ console.log(praccticeFile);
 //Use a single .push() to add the following items: false, -4.6, and "87".  Print the array to confirm the changes.
 praccticeFile.push(-4.6,87);
 console.log(praccticeFile);
+let names = []
+function askNames(enduser){
+enduser = input.question("Please input your name here!")
+names = enduser.push()
+}
+for(i=0;i<names.length;i++)
+    console.log(names[i])
+
+function askNames(names){
+    console.log(names[i])
+}
+
+function askQuestion(questions){
+    for(i = 0;i<questions[i].length;i++){
+    
+    }
+}

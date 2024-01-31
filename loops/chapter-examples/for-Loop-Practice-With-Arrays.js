@@ -24,3 +24,10 @@ for(i = course.length - 1; i < course.length;i++){
  reversedCourse =  reversedCourse + course[i];
 }
 console.log(`${reversedCourse[i]}`);
+
+let myName = ['Zack'];
+
+for(myName.length -1; i < myName.length;i++){
+    reversedName = myName.reverse() + myName
+    console.log(`What is my name?: ${myName[i]}`)
+}
