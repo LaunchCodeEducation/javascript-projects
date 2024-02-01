@@ -10,5 +10,7 @@ let index = cargoHold.indexOf('keys');
 console.log(index); // 3//
 let newCargoHold = cargoHold.splice(3,1);
 //3) Replace the elements at indexes 2 - 4 with the items ‘cat’, ‘fob’, and ‘string cheese’.
-let newCarHold2 = cargoHold.splice(2,3,).concat('string cheese','cat','fob');
+let newCarHold2 = cargoHold.splice(2,3).concat('string cheese','cat','fob');
 console.log(newCarHold2);
+
+
