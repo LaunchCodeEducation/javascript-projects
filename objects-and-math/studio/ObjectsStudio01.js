@@ -1,17 +1,15 @@
 // Code your selectRandomEntry function here:
 // Select a random number using this function to select random numbers//
-function randomSelection(arr){
-  let index = Math.floor(Math.random()*arr.length);
-  return arr[index];
-}
-for (i=0; i < idNumbers.length; i++){
-  console.log(randomSelection(idNumbers));
-}
-
 // Code your buildCrewArray function here:
-
-
+function selectRandomEntry(randomIdNumbers){
+  let randomNumber = Math.floor(Math.random()*randomIdNumbers.length);
+  return idNumbers[randomNumber];
+}
 let idNumbers = [291, 414, 503, 599, 796, 890];
+
+for(i=0; i<idNumbers.length;i++){
+  console.log(selectRandomEntry(idNumbers));
+}
 
 // Here are the candidates and the 'animals' array:
 let candidateA = {
