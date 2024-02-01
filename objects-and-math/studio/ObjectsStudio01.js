@@ -55,6 +55,13 @@ let candidateF = {
   'astronautID':890
 };
 
+// Code your template literal and console.log statements:
+function buildCrew(animalArr){
+const randomCrew = Math.floor(Math.random()*animals.length);
+return animalArr[randomCrew];
+}
 let animals = [candidateA,candidateB,candidateC,candidateD,candidateE,candidateF];
 
-// Code your template literal and console.log statements:
+for(i=0;i<3;i++){
+  console.log(`Selection ${i + 1}: ${buildCrew(animals).name}`);
+}
