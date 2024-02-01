@@ -3,7 +3,7 @@ let person1 = {
     lastName: 'Cain',
     age: 28,
     background: 'PM',
-    Sallary: 89000,
+    salary: 89000,
 }
 
 let person2 = {
@@ -11,7 +11,7 @@ let person2 = {
     lastName: 'Smith',
     age: 38,
     background: "IT",
-    Sallary: 95000,
+    salary: 95000,
 }
 
 let person3 = {
@@ -19,16 +19,18 @@ let person3 = {
     lastName: 'Jones',
     age:39,
     background: 'HR',
-    Sallary: 120000,
+    salary: 120000,
 }
 
 
-function calcSallaryAvg(sallary){
-    let totalSallary = 0;
-for(i=0,i<workForce.length;i++){
-totalSallary += workForce[i].Sallary;
-}
+function calcSalaryAvg(){
 const workForce = [person1,person2,person3];
-const sallary = totalSallary/workForce.length
-console.log(`The average Salary for the company is ${sallary}`)
+let totalSalary = 0;
+
+for(i=0,i<workForce.length;i++){
+totalSalary += workForce[i].salary;
 }
+let averageSalary = totalSalary/workForce.length;
+console.log(`The average Salary for the company is ${averageSalary}`);
+}
+calcSallaryAvg();
