@@ -23,8 +23,22 @@ let nums1 = [5, 10, 2, 42];
 let nums2 = [-2, 0, -10, -44, 5, 3, 0, 3];
 let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
 
+function sortArray(arr) {
+  // Base case: if the original array is empty, return an empty array
+  if (arr.length === 0) {
+    return [];
+  }
+// Use the findMinValue function to find the minimum value
+  let minValue = findMinValue(arr);
 
+  // Recursive call to sort the remaining elements in the original array
+  let sortedArray = sortArray(arr.filter((num) => num !== minValue));
 
+  // Return the sorted array with the minimum value added
+  return [minValue, ...sortedArray];
+}
+
+console.log(sortArray(nums1));
 
 
 function sortedArray(arr){

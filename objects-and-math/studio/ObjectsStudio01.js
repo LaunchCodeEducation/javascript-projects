@@ -1,5 +1,9 @@
 // Code your selectRandomEntry function here:
-
+function selectRandomEntry(entry){
+  for(i=0;i<idNumbers.length;i++){
+  let randomEntrty = Math.floor(Math.random()*idNumbers.length)
+  }
+  console.log(entry)
 
 // Code your buildCrewArray function here:
 
