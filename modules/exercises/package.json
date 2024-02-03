@@ -1,14 +1,14 @@
 {
-  "name": "Dependencies for Chapter 13 Exercises: Modules",
+  "name": "exercises",
   "version": "1.0.0",
-  "description": "This package.json file includes all dependencies needed to run code within files contained in this directory",
+  "description": "",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "readline-sync": "^1.4.10"
-  },
-  "scripts": {
-    "start": "node index.js"
-  },
-  "author": "John Woolbright",
-  "license": "ISC"
+  }
 }
