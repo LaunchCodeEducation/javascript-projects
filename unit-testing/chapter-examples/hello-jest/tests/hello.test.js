@@ -10,4 +10,8 @@ describe("hello world test", function(){
         expect(hello()).toBe("Hello, World!");
     });
 
+    it("should return match when strings matched with case sensitive", function(){
+      expect(doStringsMatch('Flower', '')).toBe('No match!');
+    });
+
 });

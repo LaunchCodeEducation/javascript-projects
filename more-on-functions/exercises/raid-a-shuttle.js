@@ -25,21 +25,7 @@ let cargoHold = ['meal kits', 'space suits', 'first-aid kit', 'satellite', 'gold
 console.log("Fuel level: " + checkFuel(fuelLevel));
 console.log("Hold status: " + holdStatus(cargoHold));
 
-let nonSuspiciousFunction = 
-function(a) 
-{
-  if (checkFuel(a) === 'green') {
-     return a - 100001;
-  }
-  else if (checkFuel(a) === 'yellow') {
-     return a - 50001;
-  }
-  else {
-     return a;
-  }
-};
 
-console.log(nonSuspiciousFunction(100500));
 
 /* Steal some fuel from the shuttle:
  */
@@ -83,6 +69,23 @@ arguments.
 //c). Use a template literal to return, 
 "Raided _____ kg of fuel from the tanks, and stole ____ and ____ from the cargo hold."*/
 
+
+let nonSuspiciousFunction = 
+function(a) 
+{
+  if (checkFuel(a) === 'green') {
+     return a - 100001;
+  }
+  else if (checkFuel(a) === 'yellow') {
+     return a - 50001;
+  }
+  else {
+     return a;
+  }
+};
+
+console.log(nonSuspiciousFunction(100500));
+
 let deckMops = function (b) {
   return b.splice(3, 2, 'garbage', 'trash');
 }
@@ -92,4 +95,9 @@ let irs = function(levelOfFuel, itemsInCargo) {
   return `Raided ${nonSuspiciousFunction(levelOfFuel)} kg of fuel from the tanks, and stole 
   ${arr[0]} and ${arr[1]} from the cargo hold.`
 }
+console.log(cargoHold);
 console.log(irs(100500, cargoHold));
+
+
+console.log("Fuel level: " + checkFuel(fuelLevel));
+console.log("Hold status: " + holdStatus(cargoHold));
