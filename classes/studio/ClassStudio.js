@@ -7,6 +7,7 @@ class CrewCandidate
         this.mass = mass;
         this.scores = scores;
     }
+
     addScore(newScore){
         this.scores.push(newScore);
     }
@@ -57,10 +58,20 @@ console.log("-----");
 console.log(`${gladGator.name} earned an average test score of ${gladGator.average()}% and has a status of ${gladGator.status()}`);
 
 console.log("----");
-console.log("Increasing Glad Gator Status to reserver " + gladGator.addScore(90));
-console.log("Increasing Glad Gator Status to reserver " + gladGator.addScore(90));
-console.log("New Score for Glad Gator " + gladGator.scores);
-console.log(`${gladGator.name} earned an average test score of ${gladGator.average()}% and has a status of ${gladGator.status()}`);
+
+let i = 0
+while (gladGator.status() !== "Accepted") {
+    console.log(gladGator.average())
+    gladGator.addScore(100)
+    i++
+}
+console.log("Gator Scores");
+console.log(`${gladGator.name} earned an average test score of ${gladGator.average()}% and has a status of ${gladGator.status()}.`)
+console.log(`${gladGator.name} needed to score 90% on ${i} tests to make the ${gladGator.status()} status.`)
+// console.log("Increasing Glad Gator Status to reserver " + gladGator.addScore(90));
+// console.log("Increasing Glad Gator Status to reserver " + gladGator.addScore(90));
+// console.log("New Score for Glad Gator " + gladGator.scores);
+// console.log(`${gladGator.name} earned an average test score of ${gladGator.average()}% and has a status of ${gladGator.status()}`);
 
 //Add methods for adding scores, averaging scores and determining candidate status as described in the studio activity.
 
