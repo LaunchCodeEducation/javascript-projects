@@ -93,23 +93,24 @@ function init (){
         
       });
 
+ 
       upButton.addEventListener("click", () => {
     
-        if ((parseInt(rocket.style.top.slice(0,-2))+10)<availableSpaceHeight){
+        if ((parseInt(rocket.style.top.slice(0,-2))+10)>0){
        
-        shuttleImgTop += 10;
+        //shuttleImgTop += 10;
+        shuttleImgTop -= 10;
         
-          rocket.style.bottom = shuttleImgTop + "px";
+          //rocket.style.bottom = shuttleImgTop + "px";
+          rocket.style.top = shuttleImgTop + "px";
           shuttleHeight += 10000;
           spaceShuttleHeight.innerHTML = shuttleHeight;
         }
         
-      });
-
-      
+      });      
 
       downButton.addEventListener("click", () => {
-        if ((parseInt(rocket.style.top.slice(0,-2))+10)<0){
+        if ((parseInt(rocket.style.top.slice(0,-2))+10)<availableSpaceHeight){
         shuttleImgTop += 10;
        
         rocket.style.top = shuttleImgTop + "px";
