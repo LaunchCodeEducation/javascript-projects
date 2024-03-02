@@ -21,5 +21,64 @@
       </label>
       <button>Submit</button>
     </form>
+    <form action="" method="POST">
+      <label>Username <input type="text" name="username"></label>
+      <label>Team Name <input type="text" name="team"></label>
+      <button>Submit</button>
+  </form>
+  <form action="https://handlers.education.launchcode.org/request-parrot" method="post">
+    <label>Code Name<input type="text" name="codeName"/></label>
+    <label>Code Word<input type="password" name="codeWord"/></label>
+
+    <!-- textarea must have open and closing tags -->
+    <label>Mission Description<br/>
+    <textarea name="description" rows="5" cols="75"></textarea>
+    </label>
+
+    <button>Send Report</button>
+
+    <input type="date" name="flightDate"/>
+    <input type="email" name="emailAddress"/>
+    <input type="number" name="fuelTemp"/>
+
+    <div>Ingredients</div>
+<label>Onion<input type="checkbox" name="ingredient" value="onion"/></label>
+<label>Butter<input type="checkbox" name="ingredient" value="butter"/></label>
+<label>Rice<input type="checkbox" name="ingredient" value="rice"/></label>
+
+<label>crew<input type="checkbox" name="crewReady"/></label>
+
+<label>crew<input type="checkbox" name="crewReady"  value="on"/></label>
+</form>
+
+<form action="https://handlers.education.launchcode.org/request-parrot" method="post">
+  Flight Rating:
+  <label>Rough<input type="radio" name="flightRating" value="rough"/></label>
+  <label>Few Bumps<input type="radio" name="fewBumps" value="fewBumps"/></label>
+  <label>Smooth<input type="radio" name="flightRating" value="smooth"/></label> 
+  <button>Send Report</button>
+</form>
+
+<form action="https://handlers.education.launchcode.org/request-parrot" method="post">
+  <label>Operation Code:
+  <!-- includes empty value "Select One" option -->
+  <select name="operation">
+  <option value="">* Select One *</option>
+  <option value="1">Simulation</option>
+  <option value="2">Rocket Test</option>
+  <option value="3">Crew Related</option>
+  </select>
+  </label>
+
+  <label>Facility:
+  <select name="facility">
+  <option value="johnson">Johnson Space Center, TX</option>
+  <option value="kennedy">Kennedy Space Center, FL</option>
+  <option value="white-sands">White Sands Test Facility, NM</option>
+  </select>
+  </label>
+  <button>Send Report</button>
+</form>
+
   </body>
 </html>
