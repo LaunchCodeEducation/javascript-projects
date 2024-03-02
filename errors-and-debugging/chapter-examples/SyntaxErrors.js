@@ -1,2 +1,2 @@
 let day = Wednesday;
-console.log(day;
+console.log(day);
