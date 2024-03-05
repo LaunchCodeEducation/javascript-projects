@@ -5,6 +5,7 @@
     <title>Launch Status</title>
     <script>
       window.addEventListener("load", function() {
+        
           fetch("https://handlers.education.launchcode.org/static/weather.json").then( function(response) {
               // Access the JSON in the response
               response.json().then( function(json) {

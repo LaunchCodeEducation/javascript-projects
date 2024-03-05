@@ -14,7 +14,7 @@ if (launchReady) {
    console.log("Fed parrot...");
    console.log("6, 5, 4...");
    console.log("Ignition...");
-   consoul.log("3, 2, 1...");
+   console.log("3, 2, 1...");
    console.log("Liftoff!");
 } else {
    console.log("Launch scrubbed.");
