@@ -7,6 +7,7 @@ let computerStatusCode = 200;
 let shuttleSpeed = 15000;
 
 // BEFORE running the code, predict what will be printed to the console by the following statements:
+//It should be "Engines are off"
 
 if (engineIndicatorLight === "green") {
    console.log("engines have started");
