@@ -14,5 +14,5 @@ if (engineIndicatorLight === "green") {
 } else if (engineIndicatorLight === "green blinking") {
    console.log("engines are preparing to start");
 } else {
-   console.log("engines are off");
+   console.log("engines are off")
 }
