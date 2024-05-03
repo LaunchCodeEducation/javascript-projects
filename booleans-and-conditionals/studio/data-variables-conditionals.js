@@ -1,7 +1,7 @@
 // Initialize Variables below
 let date =	"Monday 2019-03-18";
 let time =	"10:05:34 AM";
-let astronautCount	= 7;
+let astronautCount	= 9;
 let astronautStatus	= "ready";
 let averageAstronautMassKg = 80.7;
 let crewMassKg =astronautCount * averageAstronautMassKg;//564.9
@@ -64,4 +64,6 @@ if(aCount &&  validStatus && isMassLimit &&  isFuelTemp && isFuelLevel && isWeat
     console.log("weatherStatus: " +weatherStatus);
     console.log(line);
     console.log("Have a safe trip astronauts!")
+    } else {
+        console.log("Abort Mission!")
     }
