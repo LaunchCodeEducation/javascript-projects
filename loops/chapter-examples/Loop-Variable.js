@@ -11,4 +11,4 @@ for (let i = 0; i < phrase.length - 1; i = i + 3) {
 }
 
 // question: How many times does the loop body execute?
- 
+ 5
