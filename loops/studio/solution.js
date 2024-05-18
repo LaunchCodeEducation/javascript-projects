@@ -13,8 +13,8 @@ function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
   let pantry = [protein, grains, veggies, beverages, desserts];
   let meals = [];
   
-  /// Part A #2: Write a ``for`` loop inside this function
-  /// Code your solution for part A #2 below this comment (and above the return statement) ... ///
+//   /// Part A #2: Write a ``for`` loop inside this function
+//   /// Code your solution for part A #2 below this comment (and above the return statement) ... ///
   
   for (let i = 0; i < numMeals; i++) {
     let meal = [];
@@ -26,11 +26,28 @@ function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
 
   return meals;
 }
+// function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
+//   let pantry = [protein, grains, veggies, beverages, desserts];
+//   let meals = [];
+  
+//   for (let i = 0; i < numMeals; i++) {
+//     let meal = [];
+//     for (let j = 0; j < pantry.length; j++) {
+//       let foodItem = input.question(`Choose a food item from category ${j+1} (${pantry[j].join(', ')}): `);
+//       meal.push(foodItem);
+//     }
+//     meals.push(meal);
+//   }
 
+//   return meals;
+// }
 
 function askForNumber() {
   numMeals = input.question("How many meals would you like to make?");
-  
+  while (numMeals > 6 || numMeals < 1 || isNaN(numMeals)) {
+    numMeals = input.question("How many meals would you like to make? 1-6 only");
+  }
+
   /// CODE YOUR SOLUTION TO PART B here ///
 
   return numMeals;
@@ -59,9 +76,8 @@ function runProgram() {
   /// TEST PART B HERE ///
   /// UNCOMMENT the next two lines to test your ``askForNumber`` solution ///
   /// Tip - don't test this part until you're happy with your solution to part A #2 ///
-  
-  // let mealsForX = mealAssembly(protein, grains, veggies, beverages, desserts, askForNumber());
-  // console.log(mealsForX);
+  let mealsForX = mealAssembly(protein, grains, veggies, beverages, desserts, askForNumber());
+  console.log(mealsForX);
 
     /// TEST PART C HERE ///
   /// UNCOMMENT the remaining commented lines and change the password1 and password2 strings to ensure your code is doing its job ///
