@@ -3,24 +3,55 @@
 // Part One: Reverse Characters
 
 // 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse.
+
 // 2. Within the function, split the string into an array, then reverse the array.
+
 // 3. Use join to create the reversed string and return that string from the function.
+
 // 4. Below the function, define and initialize a variable to hold a string.
+
 // 5. Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
+
 // 6. Optional: Use method chaining to reduce the lines of code within the function.
+function reverseCharacters(stringToReverse){
+    return stringToReverse.split("").reverse().join("");
+}
+let testString = "LaunchCode";
+console.log(reverseCharacters(testString));
+console.log("edoChcnuaL");
 
 // Part Two: Reverse Digits
 
 // 1. Add an if statement to reverseCharacters to check the typeof the parameter.
+
 // 2. If typeof is ‘string’, return the reversed string as before.
+
 // 3. If typeof is ’number’, convert the parameter to a string, reverse the characters, then convert it back into a number.
 // 4. Return the reversed number.
 // 5. Be sure to print the result returned by the function to verify that your code works for both strings and numbers. Do this before moving on to the next exercise.
-
+function reverseCharacters(input) {
+    if (typeof input === "string") {
+        return input.split("").reverse().join("");
+    } else if (typeof input === "number") {
+        return Number(input.toString().split("").reverse().join(''))
+    }
+}
+console.log(reverseCharacters("LC101"));
+console.log(reverseCharacters(1234));
 // Part Three: Complete Reversal
 
 // 1. Define and initialize an empty array.
+
+
 // 2. Loop through the old array.
+
+function reverseArrayElements(array) {
+    let emptyArrayToReversedArray = [];
+    for (let i = 0; i < array.length; i++) {
+        emptyArrayToReversedArray.push(reverseCharacters(array[i]))
+    }
+    return emptyArrayToReversedArray.reverse();
+}
 // 3. For each element in the old array, call reverseCharacters to flip the characters or digits.
 // 4. Add the reversed string (or number) to the array defined in part ‘a’.
 // 5. Return the final, reversed array.
@@ -30,6 +61,9 @@ let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
 
+console.log(reverseArrayElements(arrayTest1));
+console.log(reverseArrayElements(arrayTest2));
+console.log(reverseArrayElements(arrayTest3));
 // Bonus Missions
 
 // 1. Have a clear, descriptive name like funPhrase.
