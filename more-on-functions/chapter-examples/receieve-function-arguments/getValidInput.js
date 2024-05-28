@@ -11,7 +11,10 @@ function getValidInput(prompt, isValid) {
 
     return userInput;
 }
-
+let startsWithA = function(input) {
+    return input[0].toLowerCase() === "a";
+}
+console.log(getValidInput("Enter a string that starts with 'a': ", startsWithA));
 // TODO 1: write a validator 
 // that ensures input starts with "a"
 
