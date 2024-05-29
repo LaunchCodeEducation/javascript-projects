@@ -1,8 +1,8 @@
 // Now consider both if/else blocks together (keeping the added console.log lines). 
 // Run the code and examine the output. 
 
-// Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false?
-// Is the program behaving as expected?
+// Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false? - FALSE
+// Is the program behaving as expected? - YES
 
 let launchReady = false;
 let fuelLevel = 17000;
@@ -11,23 +11,23 @@ let computerStatus = 'green';
 
 if (fuelLevel >= 20000) {
    console.log('Fuel level cleared.');
-   launchReady = true;
+   crewReady = true;
 } else {
    console.log('WARNING: Insufficient fuel!');
-   launchReady = false;
+   crewReady = false;
 }
 
-console.log("launchReady = ", launchReady);
+console.log("launchReady = ", crewReady);
 
 if (crewStatus && computerStatus === 'green'){
    console.log('Crew & computer cleared.');
-   launchReady = true;
+   crewReady = true;
 } else {
    console.log('WARNING: Crew or computer not ready!');
-   launchReady = false;
+   crewReady = false;
 }
 
-console.log("launchReady = ", launchReady);
+console.log("launchReady = ", crewReady);
 
 // if (launchReady) {
 //    console.log('10, 9, 8, 7, 6, 5, 4, 3, 2, 1...');
