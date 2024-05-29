@@ -25,7 +25,7 @@ console.log("Fuel level: " + checkFuel(fuelLevel));
 console.log("Hold status: " + holdStatus(cargoHold));
 
 /* Steal some fuel from the shuttle:
- * /
+ */
  
 //a). Define an anonymous function and set it equal to a variable with a normal, non-suspicious name. The function takes one parameter. This will be the fuel level on the shuttle.
 
@@ -36,7 +36,7 @@ console.log("Hold status: " + holdStatus(cargoHold));
 //d). Decide where to best place your function call to gather our new fuel.
 
 /* Next, liberate some of that glorious cargo.
- * /
+ */
 
 //a). Define another anonymous function with an array as a parameter, and set it equal to another innocent variable.
 
@@ -47,11 +47,10 @@ console.log("Hold status: " + holdStatus(cargoHold));
 //d). Don’t get hasty, matey! Remember to test your function.
 
 /* Finally, you need to print a receipt for the accountant. Don’t laugh! That genius knows MATH and saves us more gold than you can imagine.
- * /
+ */
  
 //a). Define a function called irs that can take fuelLevel and cargoHold as arguments.
 	
 //b). Call your anonymous fuel and cargo functions from within irs.
 
 //c). Use a template literal to return, "Raided _____ kg of fuel from the tanks, and stole ____ and ____ from the cargo hold."
-
