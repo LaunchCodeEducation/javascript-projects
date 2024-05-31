@@ -7,4 +7,16 @@ let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
 
 //Using one of the test arrays as the argument, call your function inside the console.log statement below.
 
-console.log(/* your code here */);
+
+function findSmallestNumber(array) {
+  let smallestNumber = array[0];
+  for (let index = 0; index < array.length; index++) {
+      if (smallestNumber > array[index]) {
+          smallestNumber = array[index];
+      }
+    }
+    return smallestNumber;
+}
+console.log(findSmallestNumber(nums1)); // expect to be 2
+console.log(findSmallestNumber(nums2)); // -44
+console.log(findSmallestNumber(nums3)); // -3.3
