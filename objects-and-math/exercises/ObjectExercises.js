@@ -24,6 +24,7 @@ let salamander = {
    age: 5,
    astronautID: 2,
    move: function () {return Math.floor(Math.random()*11)}
+
 };
 let superChimpTwo = {
    name: "Brad",
@@ -32,6 +33,7 @@ let superChimpTwo = {
    age: 6,
    astronautID: 3,
    move: function () {return Math.floor(Math.random()*11)}
+
 };
 let dog = {
    name: "Leroy",
@@ -40,6 +42,7 @@ let dog = {
    age: 5,
    astronautID: 4,
    move: function () {return Math.floor(Math.random()*11)}
+
 };
 let waterBear = {
    name: "Almina",
@@ -49,7 +52,9 @@ let waterBear = {
    astronautID: 5,
    move: function () {return Math.floor(Math.random()*11)}
 };
+
 let crew = [superChimpOne, superChimpTwo, salamander, dog, waterBear];
+
 function crewReports(animal){
    return `${animal.name}` + ' is a ' +`${animal.species}`+'. They are '+`${animal.age}`+' years old and '+`${animal.mass}`+' kilograms. Their ID is '+`${animal.astronautID}`+'.';
 }
