@@ -1,0 +1,17 @@
+{
+   "name": "unit-testing",
+   "version": "1.0.0",
+   "description": "",
+   "main": "processor.js",
+   "scripts": {
+     "test": "jest"
+   },
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+     "readline-sync": "^1.4.10"
+   },
+   "devDependencies": {
+    "jest": "^29.6.4"
+   }
+ }

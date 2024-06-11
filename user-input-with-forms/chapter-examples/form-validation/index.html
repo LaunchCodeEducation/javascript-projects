@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Validation</title>
+    <style>
+          label {display: block;}
+          body {padding: 25px;}
+    </style>
+  </head>
+  <script>
+    window.addEventListener("load", function() {
+      let form = document.querySelector("form");
+      form.addEventListener("submit", function(event) {
+        alert("submit clicked");
+      });
+    });
+  </script>
+  <body>
+    <form method="POST" action="https://handlers.education.launchcode.org/request-parrot">
+      <label>Username <input type="text" name="username"></label>
+      <label>Team Name <input type="text" name="team"></label>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
