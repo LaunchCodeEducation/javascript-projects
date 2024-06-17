@@ -33,5 +33,15 @@ if (shuttleSpeed > 17500){
 }
 
 // 4) PREDICT: Do the code blocks shown in the 'predict.txt' file produce the same result?
+if (crewStatus && computerStatusCode === 200 && spaceSuitsOn) {
+    console.log("all systems go");
+ } else {
+    console.log("WARNING. Not ready");
+ }
 
-console.log(/* "Yes" or "No" */"Maybe? Cannot find predict.txt"); //Cannot find predict.txt file to compare.
+ if (!crewStatus || computerStatusCode !== 200 || !spaceSuitsOn) {
+    console.log("WARNING. Not ready");
+ } else {
+    console.log("all systems go");
+ }
+console.log(/* "Yes" or "No" */"Yes"); //Cannot find predict.txt file to compare.
