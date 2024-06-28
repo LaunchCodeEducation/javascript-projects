@@ -18,16 +18,16 @@ function reverseCharacters(str){
         str = Number(temp.reverse().join(""));
         
     }
-    
-
     return str;
 }
+
+
 function completeReversal(arr){
     let temp = [];
     for (let x = 0; x<arr.length; x++){
         temp[x] = reverseCharacters(arr[x]);
     }
-    return temp;
+    return temp.reverse();
 }
 console.log(reverseCharacters("apple"));
 console.log(reverseCharacters("LC101"));
