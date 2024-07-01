@@ -76,6 +76,7 @@ function makeDiamonds(height, char){
     
     return str;
 }
+console.log(makeLine(4));
 console.log(makeLine(5, "$"));
 console.log(makeSquare(5, "%"));
 console.log(makeTriangle(5, "&"));
