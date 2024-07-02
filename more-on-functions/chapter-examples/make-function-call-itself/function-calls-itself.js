@@ -2,7 +2,7 @@ function combineEntries(arrayName) {
   if (arrayName.length <= 1){
     return arrayName[0];
   } else {
-    //console.log(arrayName[0], arrayName.slice(1));
+    console.log(arrayName[0], arrayName.slice(1));
     return arrayName[0] + combineEntries(arrayName.slice(1));
   }
 }

@@ -77,7 +77,7 @@ describe ("Loops studio solution", function() {
 
    /// BONUS MISSION TEST ///
 
-   // it("generatePassword returns jumbled words", function() {
-   //    expect(studentsolution.generatePassword("LoOt", "oku!")).toEqual("LookOut!");
-   // })
+    it("generatePassword returns jumbled words", function() {
+     expect(studentsolution.generatePassword("LoOt", "oku!")).toEqual("LookOut!");
+   })
 });
