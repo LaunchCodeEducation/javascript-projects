@@ -19,6 +19,27 @@ function findMinValue(arr){
 6) Be sure to print the results in order to verify your code.*/
 
 //Your function here...
+function sortArr(arr) {
+  let sortedArray = [];
+    while (arr.length > 0) {
+    sortedArray.push(findMinValue(arr));
+    arr.splice(arr.indexOf(findMinValue(arr)),1);
+    }
+    return sortedArray;
+}
+//console.log(sortArr(nums1));
+
+/* Returns sortedArray correctly but each index is also an array. Because splice returns an array in this case. And push above returns a numerical value.
+  for (let i = 0; 0 < arr.length; i++) {
+    let min = (arr.splice(arr.indexOf(findMinValue(arr)),1));
+    //console.log(min);
+    sortedArray.push(min);
+  }
+return sortedArray;
+}
+*/
+
+
 
 /* BONUS MISSION: Refactor your sorting function to use recursion below:
  */
@@ -27,3 +48,5 @@ function findMinValue(arr){
 let nums1 = [5, 10, 2, 42];
 let nums2 = [-2, 0, -10, -44, 5, 3, 0, 3];
 let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
+
+console.log(sortArr(nums3));

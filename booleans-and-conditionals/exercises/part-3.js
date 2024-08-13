@@ -19,6 +19,8 @@ f) Otherwise, print "Fuel and engine status pending..." */
 // Code 5a - 5f here:
 
 // 6) a) Create the variable commandOverride, and set it to be true or false. If commandOverride is false, then the shuttle should only launch if the fuel and engine check are OK. If commandOverride is true, then the shuttle will launch regardless of the fuel and engine status.
-
+let commandOverride = true || false;
+if commandOverride = false
 /* 6) b) Code the following if/else check:
 If fuelLevel is above 20000 AND engineIndicatorLight is NOT red blinking OR commandOverride is true print "Cleared to launch!" Else print "Launch scrubbed!" */
+c
