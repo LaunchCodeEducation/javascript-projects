@@ -1,11 +1,6 @@
 // Code your selectRandomEntry function here:
 
 
-// Code your buildCrewArray function here:
-
-
-let idNumbers = [291, 414, 503, 599, 796, 890];
-
 // Here are the candidates and the 'animals' array:
 let candidateA = {
   'name':'Gordon Shumway',
@@ -53,3 +48,29 @@ let candidateF = {
 let animals = [candidateA,candidateB,candidateC,candidateD,candidateE,candidateF];
 
 // Code your template literal and console.log statements:
+function selectRandomEntry(arr){
+  let index = Math.floor(Math.random()*arr.length);
+  return arr[index]
+}
+
+
+// Code your buildCrewArray function here:
+function buildCrewArray(idArray, numOfCrew){
+  let selectedIDs = [];
+  while (selectedIDs.length < numOfCrew) {
+    let randomID = selectRandomEntry(idArray);
+  if (!selectedIDs.includes(randomID)){
+    selectedIDs.push(randomID);
+  }
+}
+
+let crew = animals.filter(candidate => selectedIDs.includes(candidate.astronautID));
+return crew;
+}
+
+let idNumbers = [291, 414, 503, 599, 796, 890];
+let crewArray = buildCrewArray(idNumbers, 3);
+
+crewArray.forEach(member => {
+  console.log(`${member.name} is a ${member.species}. Their mass is ${member.mass}, and their ID is ${member.astronautID}. They use ${member.o2Used(5).toFixed(3)} liters of oxygen in 5 hours.`);
+});
